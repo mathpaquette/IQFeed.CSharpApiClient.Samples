@@ -65,12 +65,12 @@ namespace IQFeed.CSharpApiClient.WPF.ViewModels
             }
         }
 
-        private void RealTimeMarketDataServiceOnLevel1Msg(UpdateSummaryMessage updateSummaryMessage)
+        private void RealTimeMarketDataServiceOnLevel1Msg(IUpdateSummaryMessage updateSummaryMessage)
         {
             Dispatcher.CurrentDispatcher.Invoke(() => UpdateQuoteViewRow(updateSummaryMessage));
         }
 
-        private void UpdateQuoteViewRow(UpdateSummaryMessage updateSummaryMessage)
+        private void UpdateQuoteViewRow(IUpdateSummaryMessage updateSummaryMessage)
         {
             if (!_quoteViewRowsBySymbol.TryGetValue(updateSummaryMessage.Symbol, out var quoteViewRow))
                 return;

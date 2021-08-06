@@ -5,7 +5,7 @@ namespace IQFeed.CSharpApiClient.WPF.Services
 {
     public interface IMarketDataService
     {
-        event Action<UpdateSummaryMessage> Level1Msg;
+        event Action<IUpdateSummaryMessage> Level1Msg;
         void Subscribe(string symbol);
         void Unsubscribe(string symbol);
     }

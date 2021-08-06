@@ -15,8 +15,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         public string Symbol { get; }
 
         #region Last
-        private float _last;
-        public float Last
+        private double _last;
+        public double Last
         {
             get => _last;
             set
@@ -57,8 +57,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         #endregion
 
         #region Bid
-        private float _bid;
-        public float Bid
+        private double _bid;
+        public double Bid
         {
             get => _bid;
             set
@@ -85,8 +85,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         #endregion
 
         #region Ask
-        private float _ask;
-        public float Ask
+        private double _ask;
+        public double Ask
         {
             get => _ask;
             set
@@ -113,8 +113,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         #endregion
 
         #region Open
-        private float _open;
-        public float Open
+        private double _open;
+        public double Open
         {
             get => _open;
             set
@@ -127,8 +127,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         #endregion
 
         #region High
-        private float _high;
-        public float High
+        private double _high;
+        public double High
         {
             get => _high;
             set
@@ -141,8 +141,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         #endregion
 
         #region Low
-        private float _low;
-        public float Low
+        private double _low;
+        public double Low
         {
             get => _low;
             set
@@ -155,8 +155,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         #endregion
 
         #region Close
-        private float _close;
-        public float Close
+        private double _close;
+        public double Close
         {
             get => _close;
             set
@@ -169,8 +169,8 @@ namespace IQFeed.CSharpApiClient.WPF.Models
         #endregion
 
         #region UpdateTime
-        private DateTime _updateTime;
-        public DateTime UpdateTime
+        private TimeSpan _updateTime;
+        public TimeSpan UpdateTime
         {
             get => _updateTime;
             set

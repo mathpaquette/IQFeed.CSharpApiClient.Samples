@@ -8,7 +8,7 @@ namespace IQFeed.CSharpApiClient.WPF.Services
     {
         private readonly Level1Client _level1Client;
 
-        public event Action<UpdateSummaryMessage> Level1Msg
+        public event Action<IUpdateSummaryMessage> Level1Msg
         {
             add
             {
